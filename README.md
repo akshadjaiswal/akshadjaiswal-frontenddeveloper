@@ -1,70 +1,89 @@
-# Getting Started with Create React App
+# Food Menu Webpage
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+This project is a single-page food menu landing page built as a technical assessment for an interview. It mimics the design, colors, and theme of [Swiggy](https://www.swiggy.com/) while incorporating data from [TheMealDB API](https://www.themealdb.com/api.php) for dynamic food items. The webpage is designed with a clean, user-friendly interface, focusing on visually cohesive elements for a smooth browsing experience.
 
-## Available Scripts
+## Features
+The webpage includes the following sections:
 
-In the project directory, you can run:
+- **Header with Logo and Search Bar**:
+  - The header contains a logo and a search bar designed to align with the Swiggy theme.
+  - *Note*: The search bar is a design-only element and is not currently functional.
 
-### `npm start`
+- **Filters Section**:
+  - A filter panel to allow users to filter through various food categories.
+  - Filter options are designed to provide a smooth browsing experience for users as they explore the food items.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Food Items Section**:
+  - Displays food items fetched from TheMealDB API.
+  - Each item displays the food name, thumbnail image, and basic details.
+  
+- **Footer**:
+  - A simple footer to balance the design and structure of the webpage.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technology Stack
+- **Frontend Framework**: [React](https://reactjs.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **State Management and Logic**: React Hooks
+- **APIs**:
+  - TheMealDB API for fetching food items and details.
+- **Other Libraries**: Utilized additional libraries for UI components and handling requests to the API.
 
-### `npm test`
+## Project Structure
+The project is structured into distinct sections for clarity and modularity:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- `src/components`:
+  - Contains reusable components like `Header`, `FoodItems`, `Filters`, and `Footer`.
+  
 
-### `npm run build`
+## Installation and Setup
+To run this project locally, follow these steps:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Clone the Repository**:
+   ```bash
+   git clone <repository-url>
+   cd food-menu-webpage
+   ```
+2. Install Dependencies:
+    ```bash
+    npm install
+    ```
+3. Run the Project
+    ```bash
+    npm start
+    ```
+4. **API configuration**
+TheMealDB API is used directly within the components. Ensure you have internet access as the data is fetched in real-time from the API.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Key Learnings
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 1. **Tailwind CSS for Rapid Styling**
+   - Tailwind CSS allowed for quick, responsive, and highly customizable styling directly in the markup.
+   - Mastered using utility classes to achieve Swiggy-inspired design with minimal custom CSS, maintaining a cohesive look across components.
+   - Learned how to leverage Tailwind’s configuration for theme consistency and responsive design.
 
-### `npm run eject`
+### 2. **API Integration and Data Handling**
+   - Integrated TheMealDB API to fetch real-time food item data.
+   - Used React’s state and effect hooks to handle asynchronous data fetching and display it dynamically on the page.
+   - Gained experience in API-based application development, managing data flow from the server to the client seamlessly.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 3. **Component-Based Architecture**
+   - Built modular and reusable components like `Header`, `Filters`, `FoodItems`, and `Footer`.
+   - Improved understanding of component composition, which helped achieve a clean structure and easy-to-maintain codebase.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Challenges
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 1. **Design Consistency with Swiggy**
+   - Ensuring a consistent look and feel with Swiggy’s theme required attention to detail in terms of colors, spacing, and typography.
+   - Balancing Swiggy’s design inspiration with Tailwind’s utility classes while keeping the UI lightweight was challenging.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 2. **Non-Functional Search Bar**
+   - While the search bar design was achieved, functionality was deferred for future implementation.
+   - This highlighted the need to plan out additional time for functional features beyond design.
 
-## Learn More
+### 3. **Managing API Limitations**
+   - Adapting the design to fit the available data from TheMealDB API was challenging due to limited customization options.
+   - Adjusted data rendering and styling choices based on the available API responses to maintain an appealing design.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Conclusion
+These key learnings and challenges illustrate the project’s focus on responsive design, component reusability, and API integration, as well as the attention to design detail and handling of real-time data.
