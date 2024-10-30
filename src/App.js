@@ -8,7 +8,7 @@ import axios from 'axios';
 function App() {
   const [foodItems, setFoodItems] = useState([]);
   const [selectedArea, setSelectedArea] = useState('Indian');
-  
+
   useEffect(() => {
     fetchFoodItems(selectedArea);
   }, [selectedArea]);
@@ -19,7 +19,7 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div className="App flex flex-col items-center p-4 sm:p-8 lg:p-16">
       <Header />
       <Filter setSelectedArea={setSelectedArea} />
       <FoodItems foodItems={foodItems} />
