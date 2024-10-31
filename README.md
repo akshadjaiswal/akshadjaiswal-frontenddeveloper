@@ -1,5 +1,7 @@
 # Food Menu Webpage
 
+## [Project Live Link](https://foodmenuapp-akshadjaiswal.netlify.app)
+
 ## Overview
 This project is a single-page food menu landing page built as a technical assessment for an interview. It mimics the design, colors, and theme of [Swiggy](https://www.swiggy.com/) while incorporating data from [TheMealDB API](https://www.themealdb.com/api.php) for dynamic food items. The webpage is designed with a clean, user-friendly interface, focusing on visually cohesive elements for a smooth browsing experience.
 
