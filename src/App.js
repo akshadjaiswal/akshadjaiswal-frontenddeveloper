@@ -19,7 +19,7 @@ function App() {
   };
 
   return (
-    <div className="App flex flex-col items-center p-4 sm:p-8 lg:p-16">
+    <div className="App flex flex-col items-center p-4 sm:p-8 lg:p-16 bg-gray-100 min-h-screen">
       <Header />
       <Filter setSelectedArea={setSelectedArea} />
       <FoodItems foodItems={foodItems} />

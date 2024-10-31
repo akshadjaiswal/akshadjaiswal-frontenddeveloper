@@ -13,8 +13,11 @@ function Filter({ setSelectedArea }) {
   }, []);
 
   return (
-    <div className="filter w-full flex justify-center p-2 sm:p-4">
-      <select onChange={(e) => setSelectedArea(e.target.value)} className="w-full sm:w-1/2 p-2 rounded">
+    <div className="w-full max-w-screen-lg flex justify-center p-4">
+      <select 
+        onChange={(e) => setSelectedArea(e.target.value)} 
+        className="w-full max-w-sm p-2 border border-gray-300 rounded bg-white shadow-sm"
+      >
         {areas.map((area, index) => (
           <option key={index} value={area}>{area}</option>
         ))}
