@@ -23,7 +23,7 @@ function FoodItemCard({ item }) {
         </div>
         <button 
           onClick={() => setShowModal(true)} 
-          className="mt-2 bg-blue-500 text-white font-semibold py-2 px-4 rounded hover:bg-blue-600 w-full"
+          className="mt-2 bg-orange-500 text-white font-semibold py-2 px-4 rounded hover:bg-orange-600 w-full"
         >
           View Details
         </button>
